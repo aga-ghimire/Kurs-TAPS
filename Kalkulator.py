@@ -16,9 +16,10 @@ print("1.Dodawanie")
 print("2.Odejmowanie")
 print("3.Mnożenie")
 print("4.Dzielenie")
+print("5.Zakończ program")
 
 while True:
-    choice = input("Wybierz operację(1/2/3/4): ")
+    choice = input("Wybierz operację(1/2/3/4/5): ")
 
     if choice in ('1', '2', '3', '4'):
         num1 = float(input("Podaj pierwszą liczbę: "))
@@ -32,6 +33,7 @@ while True:
         print(num1, 'x', num2, '=', multiply(num1, num2))
     elif choice == '4':
         print(num1, ':', num2, '=', divide(num1, num2))
+    elif choice == '5':
         break
 
     else:
